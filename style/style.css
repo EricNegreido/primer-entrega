@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* configuraciones generales */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    line-height: 25px;
+}
+body{
+    background-color:#487A8C;    
+}
+
+.header-img {
+    background: url(../img/botellas.jpg);
+    width: 100%;
+    height: 60px;
+}
+/* NAVBAR */
+header{
+    background-color:#8C7256;
+
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+header .logo{
+    width: 100px;
+    padding: 15px;
+    margin: 0 10px;
+    letter-spacing: 10px;
+    border: solid 2px black;
+}
+.color-logo{
+    color: #000;
+}
+
+header .navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 30px;
+
+    
+}
+header .navbar li:hover a{
+    color: #000;
+}
+
+header .navbar  li:hover i{
+    color: #000;
+}
+
+header .navbar .boton:hover li{
+    color:#000
+}
+header .navbar a{
+    text-decoration:none;
+    color: #fff;
+    
+}
+header .navbar .boton{
+    border: solid 2px black;
+    border-radius: 50px;
+}
+header .boton {
+    margin: 10px;
+}
+/* CUERPO PRINCIPAL */
+.main-principal{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+main h1, h2, p{
+    padding: 15px;
+}
+
+.main{
+    display: flex;
+    font-size: 70px;
+    color: white;
+    justify-content: space-between;
+    
+}
+.main .img{
+
+    width: 33%;
+    height: 330px;
+    text-align: center;
+    line-height: 350px;
+}
+.main .licuado{
+    background-image: url(../img/licuados.jpg);
+}
+.main .tragos{
+    background-image: url(../img/mojitos.jpg);
+
+}
+.main .cervezas{
+    background-image: url(../img/cervezas.jpg);
+}
+.sobre-nosotros{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+/* FOOTER */
+footer .redes li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 10px; 
+    margin:  5px 20px;
+    
+}
+footer .redes i{
+    margin: 0 10px;
+}
+footer .redes p{
+    padding: 20px 10px; 
+    margin:  5px 20px;
+}
+footer .redes{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8C7256;
+    font-size: 20px;
+}
+/* CONTACTO */
+
+
+.form-cont{
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+.form-cont .formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: solid 2px #000;
+}
+
+.form-cont .formulario label, input, select{
+    display: block;
+    width: 280px;
+    height: 40px;
+    border: none;
+    color: #888;
+
+}
+
+.form-cont .formulario input, select{
+    background: linear-gradient(#8C7256, #333);
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.form-cont .formulario label{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.form-cont .formulario textarea{
+    resize: none;
+    width: 280px;
+    height: 200px;
+    border: none;
+    color: black;
+    background: linear-gradient(#8C7256, #333);
+    font-size:15px;
+    padding:10px;
+
+}
+::placeholder{
+    color: #888;
+}
+
+.formulario{
+    background-image: url(../img/bartender.jpg);
+    background-repeat:round;
+}
+
+.form-cont .formulario button:hover input{
+    background-color: #709C81;
+    color: #fff;
+}
+
+/* CERVEZAS */
+
+.cerveza-title{
+    text-align: center;
+    padding: 30px;
+}
+.main-cerveza{
+    width: 80%;
+    margin: auto;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+}
+.main-cerveza p{
+    line-height: 500px;
+}
+main .caja-roja{
+    background: url(../img/roja.png);
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+    line-height:500px;
+
+}
+main .caja-rubia{
+    text-align: right;
+    background: url(../img/rubia.jpg);
+    background-size: 100%;
+    background-repeat: round;
+    width: 100%;
+    height: 500px;
+    line-height:500px;
+
+
+}
+main .caja-negra{
+    background: url(../img/negra.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+    line-height: 500px;
+}
+
+/* TRAGOS CON ALCOHOL Y SIN ALCOHOL */
+
+.main-cont{
+    text-align: center;
+}
+.main-carta{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+.main-carta .carta-presentacion{
+    background: linear-gradient(#0009,#0007, #8885);
+    width: 200px;
+    height: 250px;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    border: solid 1px white;
+    font-size: 25px;
+    font-weight: 400px;
+
+}
+
+.main-carta .carta-presentacion img{
+    width:180px;
+    height: 190px;
+    border-radius: 10px;
+    border: solid 1px white;
+}
